@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var tasks: [String] = ["Mow the Lawn", "Feed the Dog", "Grocery Shop"]
+    @State var tasks: [Task] = [Task("Mow the Lawn"), Task("Feed the Dog"), Task("Grocery Shop")]
     var body: some View {
         List(tasks, id: \.self) { task in
-            Text(task)
+            Text(task.nameOfTask)
         }
     }
 }
