@@ -6,12 +6,6 @@
 //
 import SwiftUI
 
-@main
-struct Task: App {
-    @State var nameOfTask: String = ""
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct Task: Hashable {
+    var nameOfTask: String
     }
-}
